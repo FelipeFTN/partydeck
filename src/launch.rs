@@ -358,6 +358,9 @@ pub fn launch_cmds(
         }
 
 
+        if path_exec.extension().map_or(false, |ext| ext == "jar") {
+            cmd.args(["java", "-jar"]);
+        }
         cmd.arg(&path_exec);
 
         for arg in h.args.split_whitespace() {
