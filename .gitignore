@@ -4,6 +4,7 @@
 /deps/releases
 /deps/gbe-linux
 /deps/gbe-win
+/deps/gamescope
 /deps/umu
 res/gamescope
 gen_release.sh
